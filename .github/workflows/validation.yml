@@ -20,6 +20,7 @@ concurrency:
 
 jobs:
     dnscontrol:
+        timeout-minutes: 60
         name: DNSControl
         runs-on: ubuntu-latest
         steps:
@@ -30,6 +31,7 @@ jobs:
                   args: check
 
     tests:
+        timeout-minutes: 60
         name: Tests
         runs-on: ubuntu-latest
         steps:
