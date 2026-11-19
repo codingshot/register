@@ -16,6 +16,7 @@ concurrency:
 
 jobs:
     dns:
+        timeout-minutes: 60
         name: DNS
         runs-on: ubuntu-latest
         steps:
